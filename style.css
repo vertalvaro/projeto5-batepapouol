@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+
+body {
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+}
+button {
+  background-color: white;
+}
+ion-icon {
+  font-size: 45px;
+}
+footer ion-icon {
+  font-size: 26px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 22px;
+  align-items: center;
+  width: 375px;
+  height: 80px;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+  position: relative;
+  top: 0;
+}
+header img {
+  width: 75px;
+  height: 53px;
+}
+main {
+  width: 375px;
+  height: 667px;
+  background-color: rgb(248, 248, 248);
+  padding-top: 10px;
+  overflow: auto;
+  overflow-wrap: break-word;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 22px;
+  width: 375px;
+  height: 80px;
+  background-color: white;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  bottom: 0;
+}
+footer input {
+  width: 145px;
+  height: 30px;
+  font-size: 18px;
+  border: none;
+  font-style: italic;
+}
+input::placeholder {
+  color: black;
+}
+
+.msg {
+  background-color: #dcdcdc;
+  margin-top: 4px;
+  border-radius: 2px;
+  color: #aaaaaa;
+  padding: 12px 0 12px 8px;
+}
+
+.lobby {
+  background-color: white;
+}
+
+.private {
+  background-color: #ffdede;
+}
+
+span {
+  color: black;
+}
+.name {
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  header {
+    width: 100%;
+    height: 80px;
+  }
+  main {
+    width: 100%;
+    height: 100%;
+  }
+  footer {
+    width: 100%;
+    height: 80px;
+  }
+  .msg {
+    width: 100%;
+    height: 40px;
+  }
+  footer input {
+    width: 100%;
+  }
+}
